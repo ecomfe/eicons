@@ -1,0 +1,52 @@
+@eicon-small-font-size:                          150%;
+@eicon-medium-font-size:                         200%;
+@eicon-large-font-size:                          250%;
+
+@eicon-small-vertical-align:                     -10%;
+@eicon-medium-vertical-align:                    -16%;
+@eicon-large-vertical-align:                     -22%;
+
+.eicon-icon-size(@font-size, @font-vAlign) {
+    font-size: @font-size;
+    vertical-align: @font-vAlign;
+}
+
+.@{eicon-css-prefix}-icon-small:before {
+    .eicon-icon-size(@eicon-small-font-size, @eicon-small-vertical-align);
+}
+
+.@{eicon-css-prefix}-icon-medium:before {
+    .eicon-icon-size(@eicon-medium-font-size, @eicon-medium-vertical-align);
+}
+
+.@{eicon-css-prefix}-icon-large:before { 
+    .eicon-icon-size(@eicon-large-font-size, @eicon-large-vertical-align);
+}
+
+.@{eicon-css-prefix}-icon-spin {
+    -webkit-animation: esui-spin 2s infinite linear;
+    animation: esui-spin 2s infinite linear;
+}
+
+// keyframe 不支持变量.@{eicon-css-prefix}-spin-frame的形式，所以用了esui-spin
+@-webkit-keyframes esui-spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(359deg);
+            transform: rotate(359deg);
+  }
+}
+
+@keyframes esui-spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(359deg);
+            transform: rotate(359deg);
+  }
+}

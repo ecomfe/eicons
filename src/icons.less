@@ -1,0 +1,561 @@
+
+// icon style definition
+[class*='@{eicon-css-prefix}-'] {
+    font-family: @eicon-font-family;
+    display: inline-block;
+    font-weight: normal;
+    font-style: normal;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.@{eicon-css-prefix}-glass:before { content: @eicon-var-glass; }
+.@{eicon-css-prefix}-music:before { content: @eicon-var-music; }
+.@{eicon-css-prefix}-search:before { content: @eicon-var-search; }
+.@{eicon-css-prefix}-envelope-o:before { content: @eicon-var-envelope-o; }
+.@{eicon-css-prefix}-heart:before { content: @eicon-var-heart; }
+.@{eicon-css-prefix}-star:before { content: @eicon-var-star; }
+.@{eicon-css-prefix}-star-o:before { content: @eicon-var-star-o; }
+.@{eicon-css-prefix}-user:before { content: @eicon-var-user; }
+.@{eicon-css-prefix}-film:before { content: @eicon-var-film; }
+.@{eicon-css-prefix}-th-large:before { content: @eicon-var-th-large; }
+.@{eicon-css-prefix}-th:before { content: @eicon-var-th; }
+.@{eicon-css-prefix}-th-list:before { content: @eicon-var-th-list; }
+.@{eicon-css-prefix}-check:before { content: @eicon-var-check; }
+.@{eicon-css-prefix}-remove:before,
+.@{eicon-css-prefix}-close:before,
+.@{eicon-css-prefix}-times:before { content: @eicon-var-times; }
+.@{eicon-css-prefix}-search-plus:before { content: @eicon-var-search-plus; }
+.@{eicon-css-prefix}-search-minus:before { content: @eicon-var-search-minus; }
+.@{eicon-css-prefix}-power-off:before { content: @eicon-var-power-off; }
+.@{eicon-css-prefix}-signal:before { content: @eicon-var-signal; }
+.@{eicon-css-prefix}-gear:before,
+.@{eicon-css-prefix}-cog:before { content: @eicon-var-cog; }
+.@{eicon-css-prefix}-trash-o:before { content: @eicon-var-trash-o; }
+.@{eicon-css-prefix}-home:before { content: @eicon-var-home; }
+.@{eicon-css-prefix}-file-o:before { content: @eicon-var-file-o; }
+.@{eicon-css-prefix}-clock-o:before { content: @eicon-var-clock-o; }
+.@{eicon-css-prefix}-road:before { content: @eicon-var-road; }
+.@{eicon-css-prefix}-download:before { content: @eicon-var-download; }
+.@{eicon-css-prefix}-arrow-circle-o-down:before { content: @eicon-var-arrow-circle-o-down; }
+.@{eicon-css-prefix}-arrow-circle-o-up:before { content: @eicon-var-arrow-circle-o-up; }
+.@{eicon-css-prefix}-inbox:before { content: @eicon-var-inbox; }
+.@{eicon-css-prefix}-play-circle-o:before { content: @eicon-var-play-circle-o; }
+.@{eicon-css-prefix}-rotate-right:before,
+.@{eicon-css-prefix}-repeat:before { content: @eicon-var-repeat; }
+.@{eicon-css-prefix}-refresh:before { content: @eicon-var-refresh; }
+.@{eicon-css-prefix}-list-alt:before { content: @eicon-var-list-alt; }
+.@{eicon-css-prefix}-lock:before { content: @eicon-var-lock; }
+.@{eicon-css-prefix}-flag:before { content: @eicon-var-flag; }
+.@{eicon-css-prefix}-headphones:before { content: @eicon-var-headphones; }
+.@{eicon-css-prefix}-volume-off:before { content: @eicon-var-volume-off; }
+.@{eicon-css-prefix}-volume-down:before { content: @eicon-var-volume-down; }
+.@{eicon-css-prefix}-volume-up:before { content: @eicon-var-volume-up; }
+.@{eicon-css-prefix}-qrcode:before { content: @eicon-var-qrcode; }
+.@{eicon-css-prefix}-barcode:before { content: @eicon-var-barcode; }
+.@{eicon-css-prefix}-tag:before { content: @eicon-var-tag; }
+.@{eicon-css-prefix}-tags:before { content: @eicon-var-tags; }
+.@{eicon-css-prefix}-book:before { content: @eicon-var-book; }
+.@{eicon-css-prefix}-bookmark:before { content: @eicon-var-bookmark; }
+.@{eicon-css-prefix}-print:before { content: @eicon-var-print; }
+.@{eicon-css-prefix}-camera:before { content: @eicon-var-camera; }
+.@{eicon-css-prefix}-font:before { content: @eicon-var-font; }
+.@{eicon-css-prefix}-bold:before { content: @eicon-var-bold; }
+.@{eicon-css-prefix}-italic:before { content: @eicon-var-italic; }
+.@{eicon-css-prefix}-text-height:before { content: @eicon-var-text-height; }
+.@{eicon-css-prefix}-text-width:before { content: @eicon-var-text-width; }
+.@{eicon-css-prefix}-align-left:before { content: @eicon-var-align-left; }
+.@{eicon-css-prefix}-align-center:before { content: @eicon-var-align-center; }
+.@{eicon-css-prefix}-align-right:before { content: @eicon-var-align-right; }
+.@{eicon-css-prefix}-align-justify:before { content: @eicon-var-align-justify; }
+.@{eicon-css-prefix}-list:before { content: @eicon-var-list; }
+.@{eicon-css-prefix}-dedent:before,
+.@{eicon-css-prefix}-outdent:before { content: @eicon-var-outdent; }
+.@{eicon-css-prefix}-indent:before { content: @eicon-var-indent; }
+.@{eicon-css-prefix}-video-camera:before { content: @eicon-var-video-camera; }
+.@{eicon-css-prefix}-photo:before,
+.@{eicon-css-prefix}-image:before,
+.@{eicon-css-prefix}-picture-o:before { content: @eicon-var-picture-o; }
+.@{eicon-css-prefix}-pencil:before { content: @eicon-var-pencil; }
+.@{eicon-css-prefix}-map-marker:before { content: @eicon-var-map-marker; }
+.@{eicon-css-prefix}-adjust:before { content: @eicon-var-adjust; }
+.@{eicon-css-prefix}-tint:before { content: @eicon-var-tint; }
+.@{eicon-css-prefix}-edit:before,
+.@{eicon-css-prefix}-pencil-square-o:before { content: @eicon-var-pencil-square-o; }
+.@{eicon-css-prefix}-share-square-o:before { content: @eicon-var-share-square-o; }
+.@{eicon-css-prefix}-check-square-o:before { content: @eicon-var-check-square-o; }
+.@{eicon-css-prefix}-arrows:before { content: @eicon-var-arrows; }
+.@{eicon-css-prefix}-step-backward:before { content: @eicon-var-step-backward; }
+.@{eicon-css-prefix}-fast-backward:before { content: @eicon-var-fast-backward; }
+.@{eicon-css-prefix}-backward:before { content: @eicon-var-backward; }
+.@{eicon-css-prefix}-play:before { content: @eicon-var-play; }
+.@{eicon-css-prefix}-pause:before { content: @eicon-var-pause; }
+.@{eicon-css-prefix}-stop:before { content: @eicon-var-stop; }
+.@{eicon-css-prefix}-forward:before { content: @eicon-var-forward; }
+.@{eicon-css-prefix}-fast-forward:before { content: @eicon-var-fast-forward; }
+.@{eicon-css-prefix}-step-forward:before { content: @eicon-var-step-forward; }
+.@{eicon-css-prefix}-eject:before { content: @eicon-var-eject; }
+.@{eicon-css-prefix}-chevron-left:before { content: @eicon-var-chevron-left; }
+.@{eicon-css-prefix}-chevron-right:before { content: @eicon-var-chevron-right; }
+.@{eicon-css-prefix}-plus-circle:before { content: @eicon-var-plus-circle; }
+.@{eicon-css-prefix}-minus-circle:before { content: @eicon-var-minus-circle; }
+.@{eicon-css-prefix}-times-circle:before { content: @eicon-var-times-circle; }
+.@{eicon-css-prefix}-check-circle:before { content: @eicon-var-check-circle; }
+.@{eicon-css-prefix}-question-circle:before { content: @eicon-var-question-circle; }
+.@{eicon-css-prefix}-info-circle:before { content: @eicon-var-info-circle; }
+.@{eicon-css-prefix}-crosshairs:before { content: @eicon-var-crosshairs; }
+.@{eicon-css-prefix}-times-circle-o:before { content: @eicon-var-times-circle-o; }
+.@{eicon-css-prefix}-check-circle-o:before { content: @eicon-var-check-circle-o; }
+.@{eicon-css-prefix}-ban:before { content: @eicon-var-ban; }
+.@{eicon-css-prefix}-arrow-left:before { content: @eicon-var-arrow-left; }
+.@{eicon-css-prefix}-arrow-right:before { content: @eicon-var-arrow-right; }
+.@{eicon-css-prefix}-arrow-up:before { content: @eicon-var-arrow-up; }
+.@{eicon-css-prefix}-arrow-down:before { content: @eicon-var-arrow-down; }
+.@{eicon-css-prefix}-mail-forward:before,
+.@{eicon-css-prefix}-share:before { content: @eicon-var-share; }
+.@{eicon-css-prefix}-expand:before { content: @eicon-var-expand; }
+.@{eicon-css-prefix}-compress:before { content: @eicon-var-compress; }
+.@{eicon-css-prefix}-plus:before { content: @eicon-var-plus; }
+.@{eicon-css-prefix}-minus:before { content: @eicon-var-minus; }
+.@{eicon-css-prefix}-asterisk:before { content: @eicon-var-asterisk; }
+.@{eicon-css-prefix}-exclamation-circle:before { content: @eicon-var-exclamation-circle; }
+.@{eicon-css-prefix}-gift:before { content: @eicon-var-gift; }
+.@{eicon-css-prefix}-leaf:before { content: @eicon-var-leaf; }
+.@{eicon-css-prefix}-fire:before { content: @eicon-var-fire; }
+.@{eicon-css-prefix}-eye:before { content: @eicon-var-eye; }
+.@{eicon-css-prefix}-eye-slash:before { content: @eicon-var-eye-slash; }
+.@{eicon-css-prefix}-warning:before,
+.@{eicon-css-prefix}-exclamation-triangle:before { content: @eicon-var-exclamation-triangle; }
+.@{eicon-css-prefix}-plane:before { content: @eicon-var-plane; }
+.@{eicon-css-prefix}-calendar:before { content: @eicon-var-calendar; }
+.@{eicon-css-prefix}-random:before { content: @eicon-var-random; }
+.@{eicon-css-prefix}-comment:before { content: @eicon-var-comment; }
+.@{eicon-css-prefix}-magnet:before { content: @eicon-var-magnet; }
+.@{eicon-css-prefix}-chevron-up:before { content: @eicon-var-chevron-up; }
+.@{eicon-css-prefix}-chevron-down:before { content: @eicon-var-chevron-down; }
+.@{eicon-css-prefix}-retweet:before { content: @eicon-var-retweet; }
+.@{eicon-css-prefix}-shopping-cart:before { content: @eicon-var-shopping-cart; }
+.@{eicon-css-prefix}-folder:before { content: @eicon-var-folder; }
+.@{eicon-css-prefix}-folder-open:before { content: @eicon-var-folder-open; }
+.@{eicon-css-prefix}-arrows-v:before { content: @eicon-var-arrows-v; }
+.@{eicon-css-prefix}-arrows-h:before { content: @eicon-var-arrows-h; }
+.@{eicon-css-prefix}-bar-chart-o:before,
+.@{eicon-css-prefix}-bar-chart:before { content: @eicon-var-bar-chart; }
+.@{eicon-css-prefix}-twitter-square:before { content: @eicon-var-twitter-square; }
+.@{eicon-css-prefix}-facebook-square:before { content: @eicon-var-facebook-square; }
+.@{eicon-css-prefix}-camera-retro:before { content: @eicon-var-camera-retro; }
+.@{eicon-css-prefix}-key:before { content: @eicon-var-key; }
+.@{eicon-css-prefix}-gears:before,
+.@{eicon-css-prefix}-cogs:before { content: @eicon-var-cogs; }
+.@{eicon-css-prefix}-comments:before { content: @eicon-var-comments; }
+.@{eicon-css-prefix}-thumbs-o-up:before { content: @eicon-var-thumbs-o-up; }
+.@{eicon-css-prefix}-thumbs-o-down:before { content: @eicon-var-thumbs-o-down; }
+.@{eicon-css-prefix}-star-half:before { content: @eicon-var-star-half; }
+.@{eicon-css-prefix}-heart-o:before { content: @eicon-var-heart-o; }
+.@{eicon-css-prefix}-sign-out:before { content: @eicon-var-sign-out; }
+.@{eicon-css-prefix}-linkedin-square:before { content: @eicon-var-linkedin-square; }
+.@{eicon-css-prefix}-thumb-tack:before { content: @eicon-var-thumb-tack; }
+.@{eicon-css-prefix}-external-link:before { content: @eicon-var-external-link; }
+.@{eicon-css-prefix}-sign-in:before { content: @eicon-var-sign-in; }
+.@{eicon-css-prefix}-trophy:before { content: @eicon-var-trophy; }
+.@{eicon-css-prefix}-github-square:before { content: @eicon-var-github-square; }
+.@{eicon-css-prefix}-upload:before { content: @eicon-var-upload; }
+.@{eicon-css-prefix}-lemon-o:before { content: @eicon-var-lemon-o; }
+.@{eicon-css-prefix}-phone:before { content: @eicon-var-phone; }
+.@{eicon-css-prefix}-square-o:before { content: @eicon-var-square-o; }
+.@{eicon-css-prefix}-bookmark-o:before { content: @eicon-var-bookmark-o; }
+.@{eicon-css-prefix}-phone-square:before { content: @eicon-var-phone-square; }
+.@{eicon-css-prefix}-twitter:before { content: @eicon-var-twitter; }
+.@{eicon-css-prefix}-facebook:before { content: @eicon-var-facebook; }
+.@{eicon-css-prefix}-github:before { content: @eicon-var-github; }
+.@{eicon-css-prefix}-unlock:before { content: @eicon-var-unlock; }
+.@{eicon-css-prefix}-credit-card:before { content: @eicon-var-credit-card; }
+.@{eicon-css-prefix}-rss:before { content: @eicon-var-rss; }
+.@{eicon-css-prefix}-hdd-o:before { content: @eicon-var-hdd-o; }
+.@{eicon-css-prefix}-bullhorn:before { content: @eicon-var-bullhorn; }
+.@{eicon-css-prefix}-bell:before { content: @eicon-var-bell; }
+.@{eicon-css-prefix}-certificate:before { content: @eicon-var-certificate; }
+.@{eicon-css-prefix}-hand-o-right:before { content: @eicon-var-hand-o-right; }
+.@{eicon-css-prefix}-hand-o-left:before { content: @eicon-var-hand-o-left; }
+.@{eicon-css-prefix}-hand-o-up:before { content: @eicon-var-hand-o-up; }
+.@{eicon-css-prefix}-hand-o-down:before { content: @eicon-var-hand-o-down; }
+.@{eicon-css-prefix}-arrow-circle-left:before { content: @eicon-var-arrow-circle-left; }
+.@{eicon-css-prefix}-arrow-circle-right:before { content: @eicon-var-arrow-circle-right; }
+.@{eicon-css-prefix}-arrow-circle-up:before { content: @eicon-var-arrow-circle-up; }
+.@{eicon-css-prefix}-arrow-circle-down:before { content: @eicon-var-arrow-circle-down; }
+.@{eicon-css-prefix}-globe:before { content: @eicon-var-globe; }
+.@{eicon-css-prefix}-wrench:before { content: @eicon-var-wrench; }
+.@{eicon-css-prefix}-tasks:before { content: @eicon-var-tasks; }
+.@{eicon-css-prefix}-filter:before { content: @eicon-var-filter; }
+.@{eicon-css-prefix}-briefcase:before { content: @eicon-var-briefcase; }
+.@{eicon-css-prefix}-arrows-alt:before { content: @eicon-var-arrows-alt; }
+.@{eicon-css-prefix}-group:before,
+.@{eicon-css-prefix}-users:before { content: @eicon-var-users; }
+.@{eicon-css-prefix}-chain:before,
+.@{eicon-css-prefix}-link:before { content: @eicon-var-link; }
+.@{eicon-css-prefix}-cloud:before { content: @eicon-var-cloud; }
+.@{eicon-css-prefix}-flask:before { content: @eicon-var-flask; }
+.@{eicon-css-prefix}-cut:before,
+.@{eicon-css-prefix}-scissors:before { content: @eicon-var-scissors; }
+.@{eicon-css-prefix}-copy:before,
+.@{eicon-css-prefix}-files-o:before { content: @eicon-var-files-o; }
+.@{eicon-css-prefix}-paperclip:before { content: @eicon-var-paperclip; }
+.@{eicon-css-prefix}-save:before,
+.@{eicon-css-prefix}-floppy-o:before { content: @eicon-var-floppy-o; }
+.@{eicon-css-prefix}-square:before { content: @eicon-var-square; }
+.@{eicon-css-prefix}-navicon:before,
+.@{eicon-css-prefix}-reorder:before,
+.@{eicon-css-prefix}-bars:before { content: @eicon-var-bars; }
+.@{eicon-css-prefix}-list-ul:before { content: @eicon-var-list-ul; }
+.@{eicon-css-prefix}-list-ol:before { content: @eicon-var-list-ol; }
+.@{eicon-css-prefix}-strikethrough:before { content: @eicon-var-strikethrough; }
+.@{eicon-css-prefix}-underline:before { content: @eicon-var-underline; }
+.@{eicon-css-prefix}-table:before { content: @eicon-var-table; }
+.@{eicon-css-prefix}-magic:before { content: @eicon-var-magic; }
+.@{eicon-css-prefix}-truck:before { content: @eicon-var-truck; }
+.@{eicon-css-prefix}-pinterest:before { content: @eicon-var-pinterest; }
+.@{eicon-css-prefix}-pinterest-square:before { content: @eicon-var-pinterest-square; }
+.@{eicon-css-prefix}-google-plus-square:before { content: @eicon-var-google-plus-square; }
+.@{eicon-css-prefix}-google-plus:before { content: @eicon-var-google-plus; }
+.@{eicon-css-prefix}-money:before { content: @eicon-var-money; }
+.@{eicon-css-prefix}-caret-down:before { content: @eicon-var-caret-down; }
+.@{eicon-css-prefix}-caret-up:before { content: @eicon-var-caret-up; }
+.@{eicon-css-prefix}-caret-left:before { content: @eicon-var-caret-left; }
+.@{eicon-css-prefix}-caret-right:before { content: @eicon-var-caret-right; }
+.@{eicon-css-prefix}-columns:before { content: @eicon-var-columns; }
+.@{eicon-css-prefix}-unsorted:before,
+.@{eicon-css-prefix}-sort:before { content: @eicon-var-sort; }
+.@{eicon-css-prefix}-sort-down:before,
+.@{eicon-css-prefix}-sort-desc:before { content: @eicon-var-sort-desc; }
+.@{eicon-css-prefix}-sort-up:before,
+.@{eicon-css-prefix}-sort-asc:before { content: @eicon-var-sort-asc; }
+.@{eicon-css-prefix}-envelope:before { content: @eicon-var-envelope; }
+.@{eicon-css-prefix}-linkedin:before { content: @eicon-var-linkedin; }
+.@{eicon-css-prefix}-rotate-left:before,
+.@{eicon-css-prefix}-undo:before { content: @eicon-var-undo; }
+.@{eicon-css-prefix}-legal:before,
+.@{eicon-css-prefix}-gavel:before { content: @eicon-var-gavel; }
+.@{eicon-css-prefix}-dashboard:before,
+.@{eicon-css-prefix}-tachometer:before { content: @eicon-var-tachometer; }
+.@{eicon-css-prefix}-comment-o:before { content: @eicon-var-comment-o; }
+.@{eicon-css-prefix}-comments-o:before { content: @eicon-var-comments-o; }
+.@{eicon-css-prefix}-flash:before,
+.@{eicon-css-prefix}-bolt:before { content: @eicon-var-bolt; }
+.@{eicon-css-prefix}-sitemap:before { content: @eicon-var-sitemap; }
+.@{eicon-css-prefix}-umbrella:before { content: @eicon-var-umbrella; }
+.@{eicon-css-prefix}-paste:before,
+.@{eicon-css-prefix}-clipboard:before { content: @eicon-var-clipboard; }
+.@{eicon-css-prefix}-lightbulb-o:before { content: @eicon-var-lightbulb-o; }
+.@{eicon-css-prefix}-exchange:before { content: @eicon-var-exchange; }
+.@{eicon-css-prefix}-cloud-download:before { content: @eicon-var-cloud-download; }
+.@{eicon-css-prefix}-cloud-upload:before { content: @eicon-var-cloud-upload; }
+.@{eicon-css-prefix}-user-md:before { content: @eicon-var-user-md; }
+.@{eicon-css-prefix}-stethoscope:before { content: @eicon-var-stethoscope; }
+.@{eicon-css-prefix}-suitcase:before { content: @eicon-var-suitcase; }
+.@{eicon-css-prefix}-bell-o:before { content: @eicon-var-bell-o; }
+.@{eicon-css-prefix}-coffee:before { content: @eicon-var-coffee; }
+.@{eicon-css-prefix}-cutlery:before { content: @eicon-var-cutlery; }
+.@{eicon-css-prefix}-file-text-o:before { content: @eicon-var-file-text-o; }
+.@{eicon-css-prefix}-building-o:before { content: @eicon-var-building-o; }
+.@{eicon-css-prefix}-hospital-o:before { content: @eicon-var-hospital-o; }
+.@{eicon-css-prefix}-ambulance:before { content: @eicon-var-ambulance; }
+.@{eicon-css-prefix}-medkit:before { content: @eicon-var-medkit; }
+.@{eicon-css-prefix}-fighter-jet:before { content: @eicon-var-fighter-jet; }
+.@{eicon-css-prefix}-beer:before { content: @eicon-var-beer; }
+.@{eicon-css-prefix}-h-square:before { content: @eicon-var-h-square; }
+.@{eicon-css-prefix}-plus-square:before { content: @eicon-var-plus-square; }
+.@{eicon-css-prefix}-angle-double-left:before { content: @eicon-var-angle-double-left; }
+.@{eicon-css-prefix}-angle-double-right:before { content: @eicon-var-angle-double-right; }
+.@{eicon-css-prefix}-angle-double-up:before { content: @eicon-var-angle-double-up; }
+.@{eicon-css-prefix}-angle-double-down:before { content: @eicon-var-angle-double-down; }
+.@{eicon-css-prefix}-angle-left:before { content: @eicon-var-angle-left; }
+.@{eicon-css-prefix}-angle-right:before { content: @eicon-var-angle-right; }
+.@{eicon-css-prefix}-angle-up:before { content: @eicon-var-angle-up; }
+.@{eicon-css-prefix}-angle-down:before { content: @eicon-var-angle-down; }
+.@{eicon-css-prefix}-desktop:before { content: @eicon-var-desktop; }
+.@{eicon-css-prefix}-laptop:before { content: @eicon-var-laptop; }
+.@{eicon-css-prefix}-tablet:before { content: @eicon-var-tablet; }
+.@{eicon-css-prefix}-mobile-phone:before,
+.@{eicon-css-prefix}-mobile:before { content: @eicon-var-mobile; }
+.@{eicon-css-prefix}-circle-o:before { content: @eicon-var-circle-o; }
+.@{eicon-css-prefix}-quote-left:before { content: @eicon-var-quote-left; }
+.@{eicon-css-prefix}-quote-right:before { content: @eicon-var-quote-right; }
+.@{eicon-css-prefix}-spinner:before { content: @eicon-var-spinner; }
+.@{eicon-css-prefix}-circle:before { content: @eicon-var-circle; }
+.@{eicon-css-prefix}-mail-reply:before,
+.@{eicon-css-prefix}-reply:before { content: @eicon-var-reply; }
+.@{eicon-css-prefix}-github-alt:before { content: @eicon-var-github-alt; }
+.@{eicon-css-prefix}-folder-o:before { content: @eicon-var-folder-o; }
+.@{eicon-css-prefix}-folder-open-o:before { content: @eicon-var-folder-open-o; }
+.@{eicon-css-prefix}-smile-o:before { content: @eicon-var-smile-o; }
+.@{eicon-css-prefix}-frown-o:before { content: @eicon-var-frown-o; }
+.@{eicon-css-prefix}-meh-o:before { content: @eicon-var-meh-o; }
+.@{eicon-css-prefix}-gamepad:before { content: @eicon-var-gamepad; }
+.@{eicon-css-prefix}-keyboard-o:before { content: @eicon-var-keyboard-o; }
+.@{eicon-css-prefix}-flag-o:before { content: @eicon-var-flag-o; }
+.@{eicon-css-prefix}-flag-checkered:before { content: @eicon-var-flag-checkered; }
+.@{eicon-css-prefix}-terminal:before { content: @eicon-var-terminal; }
+.@{eicon-css-prefix}-code:before { content: @eicon-var-code; }
+.@{eicon-css-prefix}-mail-reply-all:before,
+.@{eicon-css-prefix}-reply-all:before { content: @eicon-var-reply-all; }
+.@{eicon-css-prefix}-star-half-empty:before,
+.@{eicon-css-prefix}-star-half-full:before,
+.@{eicon-css-prefix}-star-half-o:before { content: @eicon-var-star-half-o; }
+.@{eicon-css-prefix}-location-arrow:before { content: @eicon-var-location-arrow; }
+.@{eicon-css-prefix}-crop:before { content: @eicon-var-crop; }
+.@{eicon-css-prefix}-code-fork:before { content: @eicon-var-code-fork; }
+.@{eicon-css-prefix}-unlink:before,
+.@{eicon-css-prefix}-chain-broken:before { content: @eicon-var-chain-broken; }
+.@{eicon-css-prefix}-question:before { content: @eicon-var-question; }
+.@{eicon-css-prefix}-info:before { content: @eicon-var-info; }
+.@{eicon-css-prefix}-exclamation:before { content: @eicon-var-exclamation; }
+.@{eicon-css-prefix}-superscript:before { content: @eicon-var-superscript; }
+.@{eicon-css-prefix}-subscript:before { content: @eicon-var-subscript; }
+.@{eicon-css-prefix}-eraser:before { content: @eicon-var-eraser; }
+.@{eicon-css-prefix}-puzzle-piece:before { content: @eicon-var-puzzle-piece; }
+.@{eicon-css-prefix}-microphone:before { content: @eicon-var-microphone; }
+.@{eicon-css-prefix}-microphone-slash:before { content: @eicon-var-microphone-slash; }
+.@{eicon-css-prefix}-shield:before { content: @eicon-var-shield; }
+.@{eicon-css-prefix}-calendar-o:before { content: @eicon-var-calendar-o; }
+.@{eicon-css-prefix}-fire-extinguisher:before { content: @eicon-var-fire-extinguisher; }
+.@{eicon-css-prefix}-rocket:before { content: @eicon-var-rocket; }
+.@{eicon-css-prefix}-maxcdn:before { content: @eicon-var-maxcdn; }
+.@{eicon-css-prefix}-chevron-circle-left:before { content: @eicon-var-chevron-circle-left; }
+.@{eicon-css-prefix}-chevron-circle-right:before { content: @eicon-var-chevron-circle-right; }
+.@{eicon-css-prefix}-chevron-circle-up:before { content: @eicon-var-chevron-circle-up; }
+.@{eicon-css-prefix}-chevron-circle-down:before { content: @eicon-var-chevron-circle-down; }
+.@{eicon-css-prefix}-html5:before { content: @eicon-var-html5; }
+.@{eicon-css-prefix}-css3:before { content: @eicon-var-css3; }
+.@{eicon-css-prefix}-anchor:before { content: @eicon-var-anchor; }
+.@{eicon-css-prefix}-unlock-alt:before { content: @eicon-var-unlock-alt; }
+.@{eicon-css-prefix}-bullseye:before { content: @eicon-var-bullseye; }
+.@{eicon-css-prefix}-ellipsis-h:before { content: @eicon-var-ellipsis-h; }
+.@{eicon-css-prefix}-ellipsis-v:before { content: @eicon-var-ellipsis-v; }
+.@{eicon-css-prefix}-rss-square:before { content: @eicon-var-rss-square; }
+.@{eicon-css-prefix}-play-circle:before { content: @eicon-var-play-circle; }
+.@{eicon-css-prefix}-ticket:before { content: @eicon-var-ticket; }
+.@{eicon-css-prefix}-minus-square:before { content: @eicon-var-minus-square; }
+.@{eicon-css-prefix}-minus-square-o:before { content: @eicon-var-minus-square-o; }
+.@{eicon-css-prefix}-level-up:before { content: @eicon-var-level-up; }
+.@{eicon-css-prefix}-level-down:before { content: @eicon-var-level-down; }
+.@{eicon-css-prefix}-check-square:before { content: @eicon-var-check-square; }
+.@{eicon-css-prefix}-pencil-square:before { content: @eicon-var-pencil-square; }
+.@{eicon-css-prefix}-external-link-square:before { content: @eicon-var-external-link-square; }
+.@{eicon-css-prefix}-share-square:before { content: @eicon-var-share-square; }
+.@{eicon-css-prefix}-compass:before { content: @eicon-var-compass; }
+.@{eicon-css-prefix}-toggle-down:before,
+.@{eicon-css-prefix}-caret-square-o-down:before { content: @eicon-var-caret-square-o-down; }
+.@{eicon-css-prefix}-toggle-up:before,
+.@{eicon-css-prefix}-caret-square-o-up:before { content: @eicon-var-caret-square-o-up; }
+.@{eicon-css-prefix}-toggle-right:before,
+.@{eicon-css-prefix}-caret-square-o-right:before { content: @eicon-var-caret-square-o-right; }
+.@{eicon-css-prefix}-euro:before,
+.@{eicon-css-prefix}-eur:before { content: @eicon-var-eur; }
+.@{eicon-css-prefix}-gbp:before { content: @eicon-var-gbp; }
+.@{eicon-css-prefix}-dollar:before,
+.@{eicon-css-prefix}-usd:before { content: @eicon-var-usd; }
+.@{eicon-css-prefix}-rupee:before,
+.@{eicon-css-prefix}-inr:before { content: @eicon-var-inr; }
+.@{eicon-css-prefix}-cny:before,
+.@{eicon-css-prefix}-rmb:before,
+.@{eicon-css-prefix}-yen:before,
+.@{eicon-css-prefix}-jpy:before { content: @eicon-var-jpy; }
+.@{eicon-css-prefix}-ruble:before,
+.@{eicon-css-prefix}-rouble:before,
+.@{eicon-css-prefix}-rub:before { content: @eicon-var-rub; }
+.@{eicon-css-prefix}-won:before,
+.@{eicon-css-prefix}-krw:before { content: @eicon-var-krw; }
+.@{eicon-css-prefix}-bitcoin:before,
+.@{eicon-css-prefix}-btc:before { content: @eicon-var-btc; }
+.@{eicon-css-prefix}-file:before { content: @eicon-var-file; }
+.@{eicon-css-prefix}-file-text:before { content: @eicon-var-file-text; }
+.@{eicon-css-prefix}-sort-alpha-asc:before { content: @eicon-var-sort-alpha-asc; }
+.@{eicon-css-prefix}-sort-alpha-desc:before { content: @eicon-var-sort-alpha-desc; }
+.@{eicon-css-prefix}-sort-amount-asc:before { content: @eicon-var-sort-amount-asc; }
+.@{eicon-css-prefix}-sort-amount-desc:before { content: @eicon-var-sort-amount-desc; }
+.@{eicon-css-prefix}-sort-numeric-asc:before { content: @eicon-var-sort-numeric-asc; }
+.@{eicon-css-prefix}-sort-numeric-desc:before { content: @eicon-var-sort-numeric-desc; }
+.@{eicon-css-prefix}-thumbs-up:before { content: @eicon-var-thumbs-up; }
+.@{eicon-css-prefix}-thumbs-down:before { content: @eicon-var-thumbs-down; }
+.@{eicon-css-prefix}-youtube-square:before { content: @eicon-var-youtube-square; }
+.@{eicon-css-prefix}-youtube:before { content: @eicon-var-youtube; }
+.@{eicon-css-prefix}-xing:before { content: @eicon-var-xing; }
+.@{eicon-css-prefix}-xing-square:before { content: @eicon-var-xing-square; }
+.@{eicon-css-prefix}-youtube-play:before { content: @eicon-var-youtube-play; }
+.@{eicon-css-prefix}-dropbox:before { content: @eicon-var-dropbox; }
+.@{eicon-css-prefix}-stack-overflow:before { content: @eicon-var-stack-overflow; }
+.@{eicon-css-prefix}-instagram:before { content: @eicon-var-instagram; }
+.@{eicon-css-prefix}-flickr:before { content: @eicon-var-flickr; }
+.@{eicon-css-prefix}-adn:before { content: @eicon-var-adn; }
+.@{eicon-css-prefix}-bitbucket:before { content: @eicon-var-bitbucket; }
+.@{eicon-css-prefix}-bitbucket-square:before { content: @eicon-var-bitbucket-square; }
+.@{eicon-css-prefix}-tumblr:before { content: @eicon-var-tumblr; }
+.@{eicon-css-prefix}-tumblr-square:before { content: @eicon-var-tumblr-square; }
+.@{eicon-css-prefix}-long-arrow-down:before { content: @eicon-var-long-arrow-down; }
+.@{eicon-css-prefix}-long-arrow-up:before { content: @eicon-var-long-arrow-up; }
+.@{eicon-css-prefix}-long-arrow-left:before { content: @eicon-var-long-arrow-left; }
+.@{eicon-css-prefix}-long-arrow-right:before { content: @eicon-var-long-arrow-right; }
+.@{eicon-css-prefix}-apple:before { content: @eicon-var-apple; }
+.@{eicon-css-prefix}-windows:before { content: @eicon-var-windows; }
+.@{eicon-css-prefix}-android:before { content: @eicon-var-android; }
+.@{eicon-css-prefix}-linux:before { content: @eicon-var-linux; }
+.@{eicon-css-prefix}-dribbble:before { content: @eicon-var-dribbble; }
+.@{eicon-css-prefix}-skype:before { content: @eicon-var-skype; }
+.@{eicon-css-prefix}-foursquare:before { content: @eicon-var-foursquare; }
+.@{eicon-css-prefix}-trello:before { content: @eicon-var-trello; }
+.@{eicon-css-prefix}-female:before { content: @eicon-var-female; }
+.@{eicon-css-prefix}-male:before { content: @eicon-var-male; }
+.@{eicon-css-prefix}-gittip:before { content: @eicon-var-gittip; }
+.@{eicon-css-prefix}-sun-o:before { content: @eicon-var-sun-o; }
+.@{eicon-css-prefix}-moon-o:before { content: @eicon-var-moon-o; }
+.@{eicon-css-prefix}-archive:before { content: @eicon-var-archive; }
+.@{eicon-css-prefix}-bug:before { content: @eicon-var-bug; }
+.@{eicon-css-prefix}-vk:before { content: @eicon-var-vk; }
+.@{eicon-css-prefix}-weibo:before { content: @eicon-var-weibo; }
+.@{eicon-css-prefix}-renren:before { content: @eicon-var-renren; }
+.@{eicon-css-prefix}-pagelines:before { content: @eicon-var-pagelines; }
+.@{eicon-css-prefix}-stack-exchange:before { content: @eicon-var-stack-exchange; }
+.@{eicon-css-prefix}-arrow-circle-o-right:before { content: @eicon-var-arrow-circle-o-right; }
+.@{eicon-css-prefix}-arrow-circle-o-left:before { content: @eicon-var-arrow-circle-o-left; }
+.@{eicon-css-prefix}-toggle-left:before,
+.@{eicon-css-prefix}-caret-square-o-left:before { content: @eicon-var-caret-square-o-left; }
+.@{eicon-css-prefix}-dot-circle-o:before { content: @eicon-var-dot-circle-o; }
+.@{eicon-css-prefix}-wheelchair:before { content: @eicon-var-wheelchair; }
+.@{eicon-css-prefix}-vimeo-square:before { content: @eicon-var-vimeo-square; }
+.@{eicon-css-prefix}-turkish-lira:before,
+.@{eicon-css-prefix}-try:before { content: @eicon-var-try; }
+.@{eicon-css-prefix}-plus-square-o:before { content: @eicon-var-plus-square-o; }
+.@{eicon-css-prefix}-space-shuttle:before { content: @eicon-var-space-shuttle; }
+.@{eicon-css-prefix}-slack:before { content: @eicon-var-slack; }
+.@{eicon-css-prefix}-envelope-square:before { content: @eicon-var-envelope-square; }
+.@{eicon-css-prefix}-wordpress:before { content: @eicon-var-wordpress; }
+.@{eicon-css-prefix}-openid:before { content: @eicon-var-openid; }
+.@{eicon-css-prefix}-institution:before,
+.@{eicon-css-prefix}-bank:before,
+.@{eicon-css-prefix}-university:before { content: @eicon-var-university; }
+.@{eicon-css-prefix}-mortar-board:before,
+.@{eicon-css-prefix}-graduation-cap:before { content: @eicon-var-graduation-cap; }
+.@{eicon-css-prefix}-yahoo:before { content: @eicon-var-yahoo; }
+.@{eicon-css-prefix}-google:before { content: @eicon-var-google; }
+.@{eicon-css-prefix}-reddit:before { content: @eicon-var-reddit; }
+.@{eicon-css-prefix}-reddit-square:before { content: @eicon-var-reddit-square; }
+.@{eicon-css-prefix}-stumbleupon-circle:before { content: @eicon-var-stumbleupon-circle; }
+.@{eicon-css-prefix}-stumbleupon:before { content: @eicon-var-stumbleupon; }
+.@{eicon-css-prefix}-delicious:before { content: @eicon-var-delicious; }
+.@{eicon-css-prefix}-digg:before { content: @eicon-var-digg; }
+.@{eicon-css-prefix}-pied-piper:before { content: @eicon-var-pied-piper; }
+.@{eicon-css-prefix}-pied-piper-alt:before { content: @eicon-var-pied-piper-alt; }
+.@{eicon-css-prefix}-drupal:before { content: @eicon-var-drupal; }
+.@{eicon-css-prefix}-joomla:before { content: @eicon-var-joomla; }
+.@{eicon-css-prefix}-language:before { content: @eicon-var-language; }
+.@{eicon-css-prefix}-fax:before { content: @eicon-var-fax; }
+.@{eicon-css-prefix}-building:before { content: @eicon-var-building; }
+.@{eicon-css-prefix}-child:before { content: @eicon-var-child; }
+.@{eicon-css-prefix}-paw:before { content: @eicon-var-paw; }
+.@{eicon-css-prefix}-spoon:before { content: @eicon-var-spoon; }
+.@{eicon-css-prefix}-cube:before { content: @eicon-var-cube; }
+.@{eicon-css-prefix}-cubes:before { content: @eicon-var-cubes; }
+.@{eicon-css-prefix}-behance:before { content: @eicon-var-behance; }
+.@{eicon-css-prefix}-behance-square:before { content: @eicon-var-behance-square; }
+.@{eicon-css-prefix}-steam:before { content: @eicon-var-steam; }
+.@{eicon-css-prefix}-steam-square:before { content: @eicon-var-steam-square; }
+.@{eicon-css-prefix}-recycle:before { content: @eicon-var-recycle; }
+.@{eicon-css-prefix}-automobile:before,
+.@{eicon-css-prefix}-car:before { content: @eicon-var-car; }
+.@{eicon-css-prefix}-cab:before,
+.@{eicon-css-prefix}-taxi:before { content: @eicon-var-taxi; }
+.@{eicon-css-prefix}-tree:before { content: @eicon-var-tree; }
+.@{eicon-css-prefix}-spotify:before { content: @eicon-var-spotify; }
+.@{eicon-css-prefix}-deviantart:before { content: @eicon-var-deviantart; }
+.@{eicon-css-prefix}-soundcloud:before { content: @eicon-var-soundcloud; }
+.@{eicon-css-prefix}-database:before { content: @eicon-var-database; }
+.@{eicon-css-prefix}-file-pdf-o:before { content: @eicon-var-file-pdf-o; }
+.@{eicon-css-prefix}-file-word-o:before { content: @eicon-var-file-word-o; }
+.@{eicon-css-prefix}-file-excel-o:before { content: @eicon-var-file-excel-o; }
+.@{eicon-css-prefix}-file-powerpoint-o:before { content: @eicon-var-file-powerpoint-o; }
+.@{eicon-css-prefix}-file-photo-o:before,
+.@{eicon-css-prefix}-file-picture-o:before,
+.@{eicon-css-prefix}-file-image-o:before { content: @eicon-var-file-image-o; }
+.@{eicon-css-prefix}-file-zip-o:before,
+.@{eicon-css-prefix}-file-archive-o:before { content: @eicon-var-file-archive-o; }
+.@{eicon-css-prefix}-file-sound-o:before,
+.@{eicon-css-prefix}-file-audio-o:before { content: @eicon-var-file-audio-o; }
+.@{eicon-css-prefix}-file-movie-o:before,
+.@{eicon-css-prefix}-file-video-o:before { content: @eicon-var-file-video-o; }
+.@{eicon-css-prefix}-file-code-o:before { content: @eicon-var-file-code-o; }
+.@{eicon-css-prefix}-vine:before { content: @eicon-var-vine; }
+.@{eicon-css-prefix}-codepen:before { content: @eicon-var-codepen; }
+.@{eicon-css-prefix}-jsfiddle:before { content: @eicon-var-jsfiddle; }
+.@{eicon-css-prefix}-life-bouy:before,
+.@{eicon-css-prefix}-life-buoy:before,
+.@{eicon-css-prefix}-life-saver:before,
+.@{eicon-css-prefix}-support:before,
+.@{eicon-css-prefix}-life-ring:before { content: @eicon-var-life-ring; }
+.@{eicon-css-prefix}-circle-o-notch:before { content: @eicon-var-circle-o-notch; }
+.@{eicon-css-prefix}-ra:before,
+.@{eicon-css-prefix}-rebel:before { content: @eicon-var-rebel; }
+.@{eicon-css-prefix}-ge:before,
+.@{eicon-css-prefix}-empire:before { content: @eicon-var-empire; }
+.@{eicon-css-prefix}-git-square:before { content: @eicon-var-git-square; }
+.@{eicon-css-prefix}-git:before { content: @eicon-var-git; }
+.@{eicon-css-prefix}-hacker-news:before { content: @eicon-var-hacker-news; }
+.@{eicon-css-prefix}-tencent-weibo:before { content: @eicon-var-tencent-weibo; }
+.@{eicon-css-prefix}-qq:before { content: @eicon-var-qq; }
+.@{eicon-css-prefix}-wechat:before,
+.@{eicon-css-prefix}-weixin:before { content: @eicon-var-weixin; }
+.@{eicon-css-prefix}-send:before,
+.@{eicon-css-prefix}-paper-plane:before { content: @eicon-var-paper-plane; }
+.@{eicon-css-prefix}-send-o:before,
+.@{eicon-css-prefix}-paper-plane-o:before { content: @eicon-var-paper-plane-o; }
+.@{eicon-css-prefix}-history:before { content: @eicon-var-history; }
+.@{eicon-css-prefix}-circle-thin:before { content: @eicon-var-circle-thin; }
+.@{eicon-css-prefix}-header:before { content: @eicon-var-header; }
+.@{eicon-css-prefix}-paragraph:before { content: @eicon-var-paragraph; }
+.@{eicon-css-prefix}-sliders:before { content: @eicon-var-sliders; }
+.@{eicon-css-prefix}-share-alt:before { content: @eicon-var-share-alt; }
+.@{eicon-css-prefix}-share-alt-square:before { content: @eicon-var-share-alt-square; }
+.@{eicon-css-prefix}-bomb:before { content: @eicon-var-bomb; }
+.@{eicon-css-prefix}-soccer-ball-o:before,
+.@{eicon-css-prefix}-futbol-o:before { content: @eicon-var-futbol-o; }
+.@{eicon-css-prefix}-tty:before { content: @eicon-var-tty; }
+.@{eicon-css-prefix}-binoculars:before { content: @eicon-var-binoculars; }
+.@{eicon-css-prefix}-plug:before { content: @eicon-var-plug; }
+.@{eicon-css-prefix}-slideshare:before { content: @eicon-var-slideshare; }
+.@{eicon-css-prefix}-twitch:before { content: @eicon-var-twitch; }
+.@{eicon-css-prefix}-yelp:before { content: @eicon-var-yelp; }
+.@{eicon-css-prefix}-newspaper-o:before { content: @eicon-var-newspaper-o; }
+.@{eicon-css-prefix}-wifi:before { content: @eicon-var-wifi; }
+.@{eicon-css-prefix}-calculator:before { content: @eicon-var-calculator; }
+.@{eicon-css-prefix}-paypal:before { content: @eicon-var-paypal; }
+.@{eicon-css-prefix}-google-wallet:before { content: @eicon-var-google-wallet; }
+.@{eicon-css-prefix}-cc-visa:before { content: @eicon-var-cc-visa; }
+.@{eicon-css-prefix}-cc-mastercard:before { content: @eicon-var-cc-mastercard; }
+.@{eicon-css-prefix}-cc-discover:before { content: @eicon-var-cc-discover; }
+.@{eicon-css-prefix}-cc-amex:before { content: @eicon-var-cc-amex; }
+.@{eicon-css-prefix}-cc-paypal:before { content: @eicon-var-cc-paypal; }
+.@{eicon-css-prefix}-cc-stripe:before { content: @eicon-var-cc-stripe; }
+.@{eicon-css-prefix}-bell-slash:before { content: @eicon-var-bell-slash; }
+.@{eicon-css-prefix}-bell-slash-o:before { content: @eicon-var-bell-slash-o; }
+.@{eicon-css-prefix}-trash:before { content: @eicon-var-trash; }
+.@{eicon-css-prefix}-copyright:before { content: @eicon-var-copyright; }
+.@{eicon-css-prefix}-at:before { content: @eicon-var-at; }
+.@{eicon-css-prefix}-eyedropper:before { content: @eicon-var-eyedropper; }
+.@{eicon-css-prefix}-paint-brush:before { content: @eicon-var-paint-brush; }
+.@{eicon-css-prefix}-birthday-cake:before { content: @eicon-var-birthday-cake; }
+.@{eicon-css-prefix}-area-chart:before { content: @eicon-var-area-chart; }
+.@{eicon-css-prefix}-pie-chart:before { content: @eicon-var-pie-chart; }
+.@{eicon-css-prefix}-line-chart:before { content: @eicon-var-line-chart; }
+.@{eicon-css-prefix}-lastfm:before { content: @eicon-var-lastfm; }
+.@{eicon-css-prefix}-lastfm-square:before { content: @eicon-var-lastfm-square; }
+.@{eicon-css-prefix}-toggle-off:before { content: @eicon-var-toggle-off; }
+.@{eicon-css-prefix}-toggle-on:before { content: @eicon-var-toggle-on; }
+.@{eicon-css-prefix}-bicycle:before { content: @eicon-var-bicycle; }
+.@{eicon-css-prefix}-bus:before { content: @eicon-var-bus; }
+.@{eicon-css-prefix}-ioxhost:before { content: @eicon-var-ioxhost; }
+.@{eicon-css-prefix}-angellist:before { content: @eicon-var-angellist; }
+.@{eicon-css-prefix}-cc:before { content: @eicon-var-cc; }
+.@{eicon-css-prefix}-shekel:before,
+.@{eicon-css-prefix}-sheqel:before,
+.@{eicon-css-prefix}-ils:before { content: @eicon-var-ils; }
+.@{eicon-css-prefix}-meanpath:before { content: @eicon-var-meanpath; }
