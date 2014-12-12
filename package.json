@@ -1,8 +1,9 @@
 {
     "name": "eicons",
-    "main": "main",
-    "description": "EICONS定义了图标规范。定义了图标的名称。可以选择多种font进行适配。默认提供Font awesome的实现。",
-    "homepage": "https://github.com/ecomfe/esui",
+    "version": "1.0.0-alpha",
+    "main": "main.less",
+    "description": "EICONS定义了图标规范。定义了图标的名称。可以选择多种font进行适配。默认提供Font Awesome的实现。",
+    "homepage": "https://github.com/ecomfe/eicons",
     "edp": {
         "wwwroot": "/",
         "depDir": "dep",
