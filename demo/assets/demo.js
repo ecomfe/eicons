@@ -552,6 +552,6 @@ function writeFonts() {
     ];
     var count = fonts.length;
     for (var i = 0; i < count; i++) {
-        document.write('<div class="span3"><div class="icon-container"><span class="ui-icon-' + fonts[i] + '"></span><label class="font-name">ui-icon-' + fonts[i] + '</label></div></div>');
+        document.write('<div class="span3"><div class="icon-container"><span class="ui-icon-' + fonts[i] + ' ui-eicons-fw"></span><label class="font-name">ui-icon-' + fonts[i] + '</label></div></div>');
     }
 }
