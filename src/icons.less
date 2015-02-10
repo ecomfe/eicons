@@ -15,10 +15,14 @@
 }
 
 .eicons-icon(@icon) {
-    @content-name: ~"eicons-var-@{icon}";
     &:before {
-        content: @@content-name;
+        .eicons-icon-content(@icon);
     }
+}
+
+.eicons-icon-content(@icon) {
+    @content-name: ~"eicons-var-@{icon}";
+    content: @@content-name;
 }
 
 .@{eicons-css-prefix}-icon-glass { .eicons-icon(glass); }
