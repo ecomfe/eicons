@@ -229,7 +229,7 @@ body {
 .icon-container:hover {
   background: #f6f6f6;
 }
-[class*='ui-icon-'] {
+[class*='ui-icon'] {
   font-family: FontAwesome;
   display: inline-block;
   font-weight: normal;
