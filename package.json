@@ -1,6 +1,6 @@
 {
     "name": "eicons",
-    "version": "1.0.0-alpha.4",
+    "version": "1.0.0-alpha.5",
     "main": "main.less",
     "description": "EICONS定义了图标规范。定义了图标的名称。可以选择多种font进行适配。默认提供Font Awesome的实现。",
     "homepage": "https://github.com/ecomfe/eicons",
