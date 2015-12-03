@@ -1,8 +1,11 @@
 [class*='ui-icon'] {
   font-family: EIcons,FontAwesome;
   display: inline-block;
-  font-weight: normal;
+  speak: none;
   font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
