@@ -1,28 +1,23 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <!--[if lt IE 9]>
-    <script language="javascript" type="text/javascript" src="//html5shim.googlecode.com/svn/trunk/html5.js"></script>
-    <![endif]-->
     <meta charset="UTF-8">
     <link rel="stylesheet" href="assets/site.css">
-    <script src="assets/demo.js"></script>
   </head>
   <body>
     <div class="container header">
       <h1>
         EICON
-         <small>font demo</small>
+        <small>demo</small>
       </h1>
     </div>
     <div id="icons" class="container">
         <h2>
-            Icons
+            FE Icons
         </h2>
-        <div class="row">
-            <script>
-                writeFonts();
-            </script>
+        <div class="row" id="icon-list-fe">
+        </div>
+        <div class="row" id="icon-list-fa">
         </div>
         <h2>
             Font Utility
@@ -59,5 +54,10 @@
         </div>
     </div>
     <div class="container footer">EICONS</div>
+    <script src="assets/demo.js"></script>
+    <script src="assets/loadCSS.js"></script>
+    <script>
+        loadCSS('assets/icon.css');
+    </script>
   </body>
 </html>
