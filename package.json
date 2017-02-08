@@ -1,6 +1,6 @@
 {
     "name": "eicons",
-    "version": "1.0.0",
+    "version": "1.0.1",
     "main": "main.less",
     "description": "EICONS以FontAwsome为基础，提供了一组业务项目中常用的图标集合。",
     "homepage": "https://github.com/ecomfe/eicons",
